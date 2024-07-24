@@ -1,0 +1,27 @@
+.search{
+    background-color: rgb(20,20,20);
+    margin-top:-10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px 0;
+    &__content{
+        position: relative;
+        .ipSearch{
+            width:100%;
+            
+            
+            padding:8px 0 8px 10px;
+            background-color: #fff;
+            outline: none;
+            &::placeholder{
+                color:gray;
+            }
+        }
+        .btnSearch{
+            position: absolute;
+            top:5px;
+            right:10px;
+        }
+    }
+}

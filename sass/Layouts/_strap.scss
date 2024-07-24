@@ -1,0 +1,46 @@
+.strapFix{
+    position: fixed;
+    z-index: 1111;
+    width: 100%;
+    .strap{
+        
+        z-index: 1000;
+        position: relative;
+        &__content{
+            position: absolute;
+            top:44%;
+            right:0;
+            ul{
+                display: inline-block;
+                cursor: pointer;
+                list-style: none;
+                transform: translate(109px);
+                li{
+                    background-color: $color-background-strap;
+                    margin:0px 0px 2px 0;
+                    padding:0 10px;
+                    transition: all .5s ease-in-out;
+                    a{
+                        color:#fff;
+                        text-decoration: none;
+                        i{
+                            font-size: 22px;
+                            height: 44px;
+                            line-height: 44px;
+                            margin-right: 5px;
+                        }
+                        .icon{
+                            margin-left: 4px;
+                            &:hover{
+                                color:$color-hover;
+                            }
+                        }
+                    }
+                    &:hover{
+                        transform: translate(-109px);
+                    }
+                }
+            }
+        }
+    }
+}

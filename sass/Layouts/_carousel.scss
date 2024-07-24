@@ -1,0 +1,76 @@
+.carousel{
+    color:#fff;
+    &__content{
+        &__img{
+            position: relative;
+            img{
+                width:100%;
+
+            }
+            .carouselText{
+                &__ani{
+                    transition:all .5s;
+                    animation:textTime .5s linear .5s;
+                    font-size:30px;
+                    margin-bottom: 30px;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        top:-20px;
+                        width:20%;
+                        background-color:#fff;
+                        height: 3px;
+                    } 
+                    
+                }
+                &__aniButton{
+                    transition: all .5s;
+                    animation:textTime .8s linear .5s;
+
+                    @include button(#ccc,rgba(51,51,51,1),5px 15px,1px solid transparent,#fff,black);
+                    
+                }
+                position: absolute;
+                top:15%;
+                left:10%;
+                
+            }
+        }
+        .owl-carousel{
+            .owl-nav{
+                .owl-prev,.owl-next{
+                    position: absolute;
+                    top:40%;
+                    color:#fff;
+                    font-size:70px;
+                    border:none;
+                    background:none;
+                    outline: none;
+                    z-index: 10000;
+                    &:hover{
+                        color:gray;
+                    }
+                }
+                .owl-prev{
+                    left:5%;
+                }
+                .owl-next{
+                    right:5%;
+                    
+                }
+            }
+
+        }
+
+    }
+}
+@keyframes textTime{
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

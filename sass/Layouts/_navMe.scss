@@ -1,0 +1,36 @@
+.navMeList{
+    padding:80px 0;
+    background-color: rgb(0, 0, 0);
+    &__content{
+        position: relative;
+        .ListnavTab{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            border-bottom: none;
+            .navItems{
+                margin:0 10px;
+                .navLink{
+                    background-color: rgb(0, 0, 0);
+                    border: none;
+                    color:#fff;
+                    padding:10px 20px;
+                    font-size:14px;
+                    &:hover{
+                        color:#00adef;
+                    }
+                    &:focus{
+                            border-bottom: 1px solid #00adef;
+                            color:#00adef;
+                    }
+                    .iconMe{
+                        margin-right:15px;
+                    }
+                }
+            }
+            
+        }
+
+    }
+}
